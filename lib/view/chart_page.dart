@@ -37,6 +37,7 @@ class _ChartPageState extends State<ChartPage> {
       );
     }
   }
+
   bool showPieChart = true;
 
   @override
@@ -47,15 +48,15 @@ class _ChartPageState extends State<ChartPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chart'),
-        actions: [
-         IconButton(
-  icon: const Icon(Icons.download),
-  onPressed: () async {
-    await _captureAndSaveChartAsImage();
-  },
-),
+//         actions: [
+//          IconButton(
+//   icon: const Icon(Icons.download),
+//   onPressed: () async {
+//     await _captureAndSaveChartAsImage();
+//   },
+// ),
 
-        ],
+//         ],
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
